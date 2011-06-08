@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local function rank(perform)
 		perform("playermessage",
 "Ranks: &8Restricted &aVisitor &2Worker &9Builder &1Surveyor\n"..

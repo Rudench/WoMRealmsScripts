@@ -1,4 +1,4 @@
-
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local lib = register("cont")
 
 lib:hook("commanded",

@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local lib = register("like")
 local function like(perform)
 	if not lib.detail.mapOwner then

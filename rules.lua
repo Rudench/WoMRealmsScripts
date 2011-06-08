@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 
 local function rules(perform)
 	perform("playermessage", "To view the rules, visit &fhttp://womrealms.com/");

@@ -1,4 +1,4 @@
-
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local function client(perform)
 	perform("playermessage", "Fly, Speed, Noclip are part of the WoM Game Client. To get the client, visit http://womjr.com/Game_Client");
 end

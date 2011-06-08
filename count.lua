@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local abs = math.abs
 local floor = math.floor
 local lib = register("count")

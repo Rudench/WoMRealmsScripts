@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 lib = register("tiles")
 
 lib:hook("commanded", nil,

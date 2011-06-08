@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 
 local function irc(perform)
 	perform("playermessage", "WoM IRC - For help and general chat\n- &fGoto: &chttp://womjr.com/irc\n- &fIRC Rules: &chttp://womjr.com/irc_rules.");

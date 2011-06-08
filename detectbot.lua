@@ -1,5 +1,5 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local lib = register("detectbot");
-
 
 local badWords = {}
 badWords.restore = true
