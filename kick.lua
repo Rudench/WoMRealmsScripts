@@ -26,6 +26,10 @@ function()
 		return false, "Unknown user: "..name
 	end
 
+	if username == detail.username then
+		return false, "Don't be silly!"
+	end
+
 	if not isOnline then
 		return false, "That user is not online"
 	end
@@ -39,7 +43,7 @@ function()
 	end
 
 	local userMapLevel = mapaccess(detail.mapFile, username)
-	if userMapLevel and userMapLevel > 10 then
+	if userMapLevel and userMapLevel >= 10 then
 		return false, "You can not kick the realm owner"
 	end
 
