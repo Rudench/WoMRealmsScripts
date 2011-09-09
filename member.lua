@@ -6,7 +6,7 @@ nil,
 function(perform)
 	local email = lib.detail.parameter
 	if not email or email == "" then
-		perform("playermessage", "Hi, to upgrade to member, simply type:\n- &f/member &cEMAILADDRESS")
+		perform("playermessage", "Hi, to upgrade to member, simply type:\n- &f/member &cEMAILADDRESS\nand proceed to http://womrealms.com")
 		return
 	end
 

@@ -9,7 +9,7 @@ function()
 		return false, "You may not build, here, type &f/home"
 	end
 
-	local result, message = lib:perms("Advanced", "Visitor", "Artist")
+	local result, message = lib:perms()
 	if result == false then return result, message end
 
 	local tilename, extra1, extra2 = split(detail.parameter, ' ')

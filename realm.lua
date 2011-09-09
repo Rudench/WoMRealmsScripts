@@ -105,6 +105,8 @@ local contest = register("contest")
 
 contest:hook("commanded",
 function ()
+	if true then return false, "No Contest." end
+	
 	local detail = contest.detail
 
 	if detail.parameter == "" then
@@ -123,6 +125,7 @@ function ()
 end,
 function (perform)
 	perform("mapchange", "user", username, "~contest")
+	perform("playermessage", "For more information: &5http://womjr.com/contest2")
 end)
 
 contest.help('general', 'contest', 'enters contest world', '/contest [USERNAME]')

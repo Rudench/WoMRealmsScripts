@@ -10,7 +10,7 @@ function()
 		return false, "You may not build, here, type &f/home"
 	end
 
-	local result, message = lib:perms("Advanced", "Visitor", "Artist")
+	local result, message = lib:perms()
 	if result == false then return result, message end
 
 	if detail.parameter == "" then

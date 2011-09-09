@@ -19,7 +19,7 @@ function()
 		tile = -1
 	end
 
-	local result, message = lib:perms("Advanced", "Visitor", "Artist")
+	local result, message = lib:perms()
 	if result == false then
 		tile = -1
 	end

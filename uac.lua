@@ -39,13 +39,13 @@ function()
 		return false, "You can't build on chat realm, type &f/home"
 	end
 	if string.sub(detail.mapFile, 1, 12) == "maps/museum+" then
-		local allowed = lib:perms("Build", "Visitor", "Architect")
+		local allowed = lib:perms("Build")
 		if allowed == false then
 			return false, "This is a museum"
 		end
 	end
 
-	return lib:perms("Build", "Visitor", "Surveyor")
+	return lib:perms("Build")
 end
 )
 

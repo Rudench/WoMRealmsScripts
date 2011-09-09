@@ -15,12 +15,17 @@ lib:hook("commanded", function()
 		return false, 'May only tag 12 characters'
 	end
 
+	if deprofane(customName) ~= customName then
+		return false, 'Cannot use profanity'
+	end
+
 	if string.find(customName, '[^ -|]') then
 		return false, 'Contains invalid character'
 	end
 
 end, function(perform)
 	local customName = lib.detail.parameter
+	userdata("overrideName", "")
 	if (customName ~= "") then
 		customName = "<"..customName.."> "..lib.detail.username
 		userdata("customName", customName)

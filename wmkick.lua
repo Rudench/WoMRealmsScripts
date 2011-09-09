@@ -12,16 +12,24 @@ function()
 	if not detail.parameter then
 		return false, "Syntax: /wmkick USER REASON"
 	end
-
+	
 	name, reason = split(detail.parameter, " ", 2)
 
 	if not reason then
 		return false, "Must supply a reason for the note"
 	end
+	
+	username, userLevel, adminLevel = exists(name)
+	if username == detail.username then
+		return false, "Don't be silly! Why would you do that?"
+	end
 
-	username, destLevel = exists(name)
 	if not username then
 		return false, "Unknown user: "..name
+	end
+
+	if adminLevel >= 1 or userLevel >= 99 then
+		return false, "You can not kick staff"
 	end
 
 --	if destLevel >= 10 then

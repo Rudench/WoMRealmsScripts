@@ -4,6 +4,9 @@ local lib = register("tp")
 lib:hook("commanded",
 function ()
 	local detail = lib.detail
+	if detail.parameter == '<WM>' then
+		return false, "Cant touch this....."
+	end
 	username = exists(detail.parameter)
 
 	if not username then

@@ -27,7 +27,7 @@ function()
 	end
 
 	if username == detail.username then
-		return false, "Don't be silly!"
+		return false, "Don't be silly! Why would you do that?"
 	end
 
 	if not isOnline then

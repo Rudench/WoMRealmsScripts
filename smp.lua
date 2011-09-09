@@ -1,5 +1,5 @@
 local function smp(perform)
-	perform("playermessage", "WoM SMP\n- &fcurrently open for artist+ or premium\n- &fyou &cneed &fto buy minecraft beta to be able to connect\n- &cIP = smp.womjr.com")
+	perform("playermessage", "WoM SMP\n- &fcurrently open for surveyor+ or premium\n- &fyou &cneed &fto buy minecraft beta to be able to connect\n- &cIP = smp.womjr.com")
 end
 
 local lib = register("smp")
